@@ -14,12 +14,13 @@
         <action
             android:id="@+id/action_fragment_principal_to_fragment_home"
             app:destination="@id/fragment_home"
-            app:popUpTo="@id/fragment_home"
+            app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true"
             />
         <action
             android:id="@+id/action_fragment_principal_to_fragment_registro"
             app:destination="@id/fragment_registro"
+            app:popUpTo="@id/fragment_perfil"
             app:popUpToInclusive="true"
             />
     </fragment>
@@ -52,7 +53,7 @@
         <action
             android:id="@+id/action_fragment_perfil_to_fragment_principal"
             app:destination="@id/fragment_principal"
-            app:popUpTo="@id/fragment_principal"
+            app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true"/>
     </fragment>
 
@@ -65,7 +66,7 @@
         <action
             android:id="@+id/action_fragment_registro_to_fragment_home"
             app:destination="@id/fragment_home"
-            app:popUpTo="@id/fragment_principal"
+            app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true"
             />
     </fragment>
