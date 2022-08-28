@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_principal">
+
+    <fragment
+        android:id="@+id/fragment_principal"
+        android:name="com.example.laboratorio7.fragment_principal"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal"
+        >
+        <action
+            android:id="@+id/action_fragment_principal_to_fragment_home"
+            app:destination="@id/fragment_home"
+            app:popUpTo="@id/fragment_home"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_fragment_principal_to_fragment_registro"
+            app:destination="@id/fragment_registro"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.laboratorio7.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"
+        >
+        <argument
+            android:name="correo"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragment_home_to_fragment_perfil"
+            app:destination="@id/fragment_perfil"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_perfil"
+        android:name="com.example.laboratorio7.fragment_perfil"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_perfil"
+        >
+        <argument
+            android:name="correo"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragment_perfil_to_fragment_principal"
+            app:destination="@id/fragment_principal"
+            app:popUpTo="@id/fragment_principal"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_registro"
+        android:name="com.example.laboratorio7.fragment_registro"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro"
+        >
+        <action
+            android:id="@+id/action_fragment_registro_to_fragment_home"
+            app:destination="@id/fragment_home"
+            app:popUpTo="@id/fragment_principal"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+
+</navigation>

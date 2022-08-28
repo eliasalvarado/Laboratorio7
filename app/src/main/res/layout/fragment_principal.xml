@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_principal"
+    android:id="@+id/fragment_principal">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/laboratorio_7"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@id/text_inputLayout_correo_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginBottom="50dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_inputLayout_correo_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toBottomOf="@id/title_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="30dp"
+            app:layout_constraintBottom_toTopOf="@id/button_registro_fragment_principal"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_correo_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ingresa_tu_correo" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_registro_fragment_principal"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/crear_usuario"
+            android:textAlignment="viewStart"
+            android:textColor="@color/celeste"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@id/button_iniciar_sesion_framento_principal"
+            app:layout_constraintStart_toStartOf="@id/lineaguia"
+            app:layout_constraintTop_toBottomOf="@id/text_inputLayout_correo_login" />
+
+        <Button
+            android:id="@+id/button_iniciar_sesion_framento_principal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciar_sesi_n"
+            android:backgroundTint="@color/naranja"
+            app:layout_constraintTop_toBottomOf="@id/button_registro_fragment_principal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/lineaguia"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="30dp"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

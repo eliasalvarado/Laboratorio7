@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Laboratorio 7</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ingresa_tu_correo">Ingresa tu correo</string>
+    <string name="laboratorio_7">Laboratorio 7</string>
+    <string name="crear_usuario">¿Nuevo usuario? ¡Crea tu cuenta aqui!</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="buenos_dias">¡Buenos dias!</string>
+    <string name="actualizar_perfil">Actualizar perfil</string>
+    <string name="nueva_cuenta">Nueva Cuenta</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="correo">jcdurini@uvg.edu.gt</string>
+</resources>

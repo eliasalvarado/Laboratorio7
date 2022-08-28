@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_perfil">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mi_perfil"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView_circulo_camara"
+            android:layout_width="81dp"
+            android:layout_height="78dp"
+            android:foreground="@drawable/ic_camara"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_circulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/lineaguia3_perfil"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_inputLayout_correo_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:startIconDrawable="@drawable/ic_arroba"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/lineaguia4_perfil"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/correo" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_actualizar_miperfil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/actualizar"
+            android:backgroundTint="@color/naranja"
+            app:layout_constraintStart_toStartOf="@id/lineaguia1_perfil"
+            app:layout_constraintEnd_toEndOf="@id/lineaguia2_perfil"
+            app:layout_constraintBottom_toBottomOf="@id/lineaguia1_horizontal_perfil"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia1_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia2_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="390dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia1_horizontal_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="659dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia3_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="132dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia4_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="274dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
